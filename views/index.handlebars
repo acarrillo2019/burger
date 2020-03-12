@@ -15,4 +15,14 @@
 					{{> burgers/burger-block eaten=false}}
 				{{/unless}}
 			{{/each}}
+		</div>{{!-- Burgers that have been devoured --}}
+		<div class="col-md">
+			<h2 class="text-center">Devoured</h2>
+			<hr>
+			{{#each burgers}}
+				{{#if devoured}}
+					{{> burgers/burger-block eaten=true}}
+				{{/if}}
+			{{/each}}
 		</div>
+	</div>
