@@ -4,3 +4,15 @@
 			<div><h1 class="text-center display-4">Burger Frenzy!</h1></div>
 		</div>
 	</div>
+
+    	{{!-- Available Burgers --}}
+	<div class="row style="width:80%;">
+		<div class="col-md">
+			<h2 class="text-center">Menu</h2>
+			<hr>
+			{{#each burgers}}
+				{{#unless devoured}}
+					{{> burgers/burger-block eaten=false}}
+				{{/unless}}
+			{{/each}}
+		</div>
