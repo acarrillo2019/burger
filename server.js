@@ -16,3 +16,17 @@ app.use(bodyParser.json());
 // Setup Handlebars
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+// Setup access to static assets
+app.use(express.static('public'))
+
+// Setup Routes
+app.use(routes);
+
+
+// Start server to listen to client requests.
+
+app.listen(PORT, function() {
+  // Log (server-side) when the server has started
+  console.log("Server listening on: http://localhost:" + PORT);
+});
