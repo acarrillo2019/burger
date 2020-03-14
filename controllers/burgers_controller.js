@@ -6,7 +6,11 @@ var burger = require("../models/burger.js");
 router.get("/", function(req, res) {
   // Get all burger data from db
   burger.all(function(data){
-    res.render("index", {burgers:data});
+    var hbsObject = {
+      burgers: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
   });
 });
 
