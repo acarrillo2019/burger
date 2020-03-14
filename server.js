@@ -1,9 +1,8 @@
 // Dependencies
-
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
-var routes = require("./controllers/burgers_controller");
+
 
 // Setup the Express App
 var app = express();
@@ -18,11 +17,13 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Setup access to static assets
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+// Import routes and give the server access to them.
+var routes = require("./controllers/burgers_controller.js");
 
 // Setup Routes
 app.use(routes);
-
 
 // Start server to listen to client requests.
 
