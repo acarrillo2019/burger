@@ -11,3 +11,5 @@ burger_name VARCHAR (20) NOT NULL,
 devoured BOOLEAN DEFAULT false,
 PRIMARY KEY (id)
 );
+
+SELECT * FROM burgers
