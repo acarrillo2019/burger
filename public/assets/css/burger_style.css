@@ -1,6 +1,6 @@
 .bimbotron {
     color: yellow;
-    font-size: 4rem;
+    font-size: 2rem;
     min-width: 200px;
     min-height: 300px;
     display: flex;
@@ -10,28 +10,64 @@
   body {
     color: yellow;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 4rem;
+    font-size: 2rem;
     background-image: url(../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: rgb(61, 61, 61);
+  background-position-y: -140px;
   }
+
   .eat-burger:hover, .add-burger:hover, .delete-burger:hover {
     opacity: 0.8;
   }
   
+  .title {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .eaten {
+    text-align: center;
+    height: 128px;
+    padding: 36px;
+  }
+
+  .burger {
+    text-align: center;
+  }
+
   .alert {
     font-size: 2rem;
   }
+
+  .add-burger {
+    height: 40px;
+    position: absolute;
+    top: -22px;
+  }
+
+  .delete-burger {
+    position: relative;
+    top: 9px;
+    right: 73px;
+    height: 32px;
+  }
+
 
   @media only screen and (max-width: 1410px) {
     body {
       font-family: 'Alfa Slab One', cursive;
       font-size: 4rem;
       background-image: url(../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
-      background-size: 178%;
+      background-size: 118%;
       background-position: center;
+      background-position-y: -43px;
     }
   }
 
@@ -43,7 +79,7 @@
       background-image: url(../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
       background-size: 200%;
       height: 100%;
-      overflow: hidden;
+      overflow: visible;
       background-position: top;
     }
   }
@@ -55,8 +91,19 @@
       background-image: url(../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
       background-size: 275%;
       height: 100%;
-      overflow: hidden;
+      overflow: visible;
       background-repeat: no-repeat;
       background-position: -300px 0px;
     }
+
+  .add-burger {
+    position: relative;
+    top: -83px;
+    left: 273px;
+  }
+
+  #burgerInput {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
   }
