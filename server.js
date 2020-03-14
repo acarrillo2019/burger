@@ -20,7 +20,7 @@ app.set("view engine", "handlebars");
 app.use(express.static('public'));
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/burgers_controller.js");
+var routes = require("./controllers/burgers_controller");
 
 // Setup Routes
 app.use(routes);
