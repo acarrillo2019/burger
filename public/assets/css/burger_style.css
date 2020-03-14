@@ -1,0 +1,18 @@
+.jumbotron {
+    color: green;
+    background-color: antiquewhite;
+    background-image: url(../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+  }
+  .eat-burger:hover, .add-burger:hover, .delete-burger:hover {
+    opacity: 0.8;
+  }
+  
+  .alert {
+    font-size: 1rem;
+  }
