@@ -1,5 +1,6 @@
-Burger
-Purpose:
+#Burger
+
+##Purpose:
 
 Following MVC design pattern, create an application using MySQL, Node, Express, Handlebars and a homemade ORM to display burger options and log burger consumption.
 Description
@@ -9,13 +10,13 @@ The Burger website will show the available burgers for consumption. The user can
 Link to app deployed on Heroku: frozen-tundra-72523
 Tools
 
-NPM Libraries
+##NPM Libraries
 
     express
     body-parser
     mysql
     express-handlebars
 
-Frameworks
+##Frameworks
 
     Bootstrap
